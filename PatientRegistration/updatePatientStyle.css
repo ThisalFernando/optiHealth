@@ -1,0 +1,154 @@
+section{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.296)50%,rgba(0,0,0,0.296)50%), url('Images/BGImage03.jpg') no-repeat;
+    background-size: cover;
+    height: calc(150vh - 5px);
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vh;
+    padding: 40px;
+    margin: auto;
+}
+
+.container{
+    box-shadow: 0 0 10px #3f3f3f77;
+    background-color: #ffffffd4;
+    width:600px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo{
+    display: inline-flex;
+    line-height: 80px;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.updateheading{
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    font-size: 25px;
+    border-color: white;
+    border-width: 1px;
+    -webkit-text-stroke: 0.8px white; /* Stroke thickness and color */
+}
+
+form div{
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 530px;
+    box-shadow: 0 0 10px #3f3f3f2a;
+}
+
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #004880;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 530px;
+    font-weight: bold;
+    font-size: medium;
+    box-shadow: 0 0 10px #3f3f3fca;
+}
+
+.logoutBtn{
+    background-color: red;
+}
+
+a:hover{
+    background: none;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    position: absolute; /* Use absolute positioning to control its placement */
+    top: 50%; /* Align it vertically in the middle */
+    right: 0px; /* Align it horizontally from the right edge */
+    transform: translateY(-50%); /* Adjust to ensure vertical centering */
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    position: relative;
+    background: #004880;
+    height: 80px;
+    width: 100%;
+}
+
+
+@media (max-width: 1100px){
+    .user{
+        display: none;
+    }
+}
+
+@media (max-width: 858px){
+
+    .checkbtn {
+        display: block;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-top: -15px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+
+    .container{
+        display: block;
+        width: 40vh;
+        height: 830px;
+    }
+
+    input{
+        width: 220px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    button{
+        width: 220px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .lblFname, .lblDob, .lblGen, .lblms, .lblPhone, .lblEmail, .lblPwd{
+        font-size: 12px;
+    }
+
+    footer{
+        margin-top: -140px;
+    }
+
+    .user{
+        display: none;
+    }
+}
+

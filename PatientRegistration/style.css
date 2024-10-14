@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: #004880;
+    height: 80px;
+    width: 100%;
+}
+
+img{
+    color: white;
+    width: 18vh;
+    line-height: 80px;
+    padding: 0 20px;
+    border-color: black;
+    border-width: 5vh;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active{
+    color: #60b7fa;
+    transform: 5s;
+}
+
+a:hover{
+    color: #60b7fa;
+    transform: 5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+footer{
+    background: #004880;
+    height: 150px;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    color: white;
+    justify-content: center;
+}
+
+.fImages{
+    display: flex;
+}
+
+.aboutTxt{
+    padding: 15px;
+    padding-left: 40px;
+    text-align: justify;
+}
+
+.contactTxt{
+    padding: 15px;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+.fImage01, .fImage02, .fImage03{
+    padding: 15px;
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+.wdp, .fdp, .ldp{
+    width: 15vh;
+}
+
+@media (max-width: 952px){
+    img{
+        font-size: 30px;
+        /*padding-right: 80px;
+        width: 30vh;*/
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .contactTxt{
+        padding: 15px;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .fImage01, .fImage02, .fImage03{
+        padding: 2dp;
+    }
+
+}
+
+@media (max-width: 910px){
+    
+    .contactTxt{
+        padding: 15px;
+    }
+
+    footer{
+        height: 500px;
+    }
+
+    .fImage01, .fImage02, .fImage03{
+        padding: 2dp;
+    }
+
+    .aboutTxt{
+        display: none;
+    }
+
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .footer{
+        display: flex;
+    }
+
+    .wdp, .fdp, .ldp{
+        width: 12vh;
+        margin-top: -5px;
+    }
+
+    .aboutTxt{
+        display: none;
+    }
+
+    .fImages{
+        display: block;
+    }
+
+    footer{
+        height: 300px;
+    }
+    
+}
+
+section{
+    background: url(images/BGImage.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 10px);
+}
